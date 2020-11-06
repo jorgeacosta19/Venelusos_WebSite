@@ -1,0 +1,477 @@
+:root {
+    --color1: rgb(158, 12, 12);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merriweather', serif;
+}
+
+
+/*----Global-----*/
+
+html {
+    font-size: 62.5%;
+    /* To make 1rem =10px */
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+
+/*-----  Frameworks----*/
+
+.text-center {
+    text-align: center;
+}
+
+.title-center {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    color: black;
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%);
+    background-blend-mode: soft-light, screen;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 2rem;
+    }
+}
+
+.img-txt {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 3px;
+}
+
+
+/*---Button---*/
+
+.button {
+    background-color: var(--color1);
+    color: white;
+    font-weight: 900;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    border-radius: .5rem;
+    display: inline-block;
+    text-align: center;
+    flex: 0 0 88%;
+}
+
+@media (min-width: 768px) {
+    .button {
+        flex: 0 0 auto;
+    }
+}
+
+.ver-button {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(160, 65, 65);
+    color: white;
+}
+
+
+/*-------Header styles----*/
+
+background-color:red;
+
+/*Styles Header for pages*/
+
+
+/*End Styles Header for pages*/
+
+
+/* ------Index Header */
+
+.site-header {
+    background-image: url(../img/Cabodaroca.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 20vh;
+    max-width: 20h;
+}
+
+.banner-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-top {
+    display: flex;
+    /* position: fixed; */
+    height: 6rem;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+@media (min-width: 768px) {
+    .header-top {
+        height: 12rem;
+        background-image: unset;
+    }
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    height: 12rem;
+    margin-top: 0rem;
+}
+
+.brand-logo {
+    width: 6rem;
+    height: 6rem;
+}
+
+.brand-name {
+    height: 7rem;
+    width: 7rem;
+}
+
+@media (min-width: 768px) {
+    .brand-logo {
+        width: 14rem;
+        height: 14rem;
+    }
+    .brand-name {
+        height: 14rem;
+        width: 14rem;
+    }
+}
+
+
+/*  Menu Style*/
+
+.icon-menu {
+    background-color: var(--color1);
+    color: white;
+    border-radius: .5rem;
+    padding: .6rem;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+
+
+/* *****Navigation***** */
+
+.navigation {
+    margin: 0 auto;
+}
+
+.navigation a {
+    text-align: center;
+    display: none;
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.6rem;
+}
+
+.navigation-menu a {
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+.navigation .link-menu:hover {
+    /*to not be aplied for the footer*/
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .navigation a {
+        display: inline;
+    }
+    .navigation-menu a {
+        display: none;
+    }
+}
+
+
+/* Bottom header */
+
+.header-bottom {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .header-bottom {
+        height: 60vh;
+    }
+}
+
+.header-txt h1 {
+    color: white;
+    font-size: 4rem;
+    margin-bottom: 6rem;
+    padding: 0;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .header-txt h1 {
+        font-size: 6rem;
+    }
+}
+
+.button-up {
+    /* position: relative; */
+    display: flex;
+}
+
+.button-up i {
+    justify-content: center;
+    position: sticky;
+    border-radius: .6rem;
+    background-color: gray;
+    padding: 1.5rem;
+    justify-content: end;
+}
+
+
+/*----main styles*/
+
+.information,
+.events {
+    display: grid;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .information,
+    .events {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        justify-content: center;
+    }
+}
+
+.preview-info,
+.preview-event {
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+    width: 40vh;
+    margin: 0 auto;
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.preview-info:nth-child(1) {
+    background-image: url(..//img/Caiscais.jpg);
+}
+
+.preview-info:nth-child(3) {
+    background-image: url(../img/belentower.jpg);
+}
+
+.preview-info:nth-child(2) {
+    background-image: url(../img/banner.jpg);
+}
+
+.preview-event:nth-child(1) {
+    background-image: url(../img/condemadeira.jpg);
+}
+
+.preview-event:nth-child(2) {
+    background-image: url(../img/evento2.jpg);
+}
+
+.preview-event:nth-child(3) {
+    background-image: url(../img/Cabodaroca.jpg);
+}
+
+.location-partners {
+    background-color: silver;
+}
+
+@media (min-width: 768px) {
+    .location-partners {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0rem;
+    }
+}
+
+.location-partners h2 {
+    margin-top: 1rem;
+}
+
+.location {
+    grid-column: 2/3;
+    grid-row: 1/6;
+    width: 100%;
+    height: 100%;
+    min-height: 40rem;
+}
+
+.partner-img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    object-fit: fill;
+    max-width: 50%;
+    max-height: 80%;
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.partner-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--color1);
+    padding-right: .3rem;
+    padding-bottom: .2rem;
+}
+
+.location-partners h3 {
+    margin: 1.5rem 0rem 0rem 0rem;
+}
+
+
+/*------Footer styles-------*/
+
+.footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: silver;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.footer [class^="fab"] {
+    color: silver;
+    text-decoration: none;
+    font-size: 40px;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.fa-whatsapp:hover {
+    color: green;
+}
+
+.fa-twitter:hover {
+    color: rgb(75, 169, 247);
+}
+
+.fa-facebook-square:hover {
+    color: rgb(0, 37, 116);
+}
+
+.fa-instagram:hover {
+    color: black;
+}
+
+.fa-telegram:hover {
+    color: white;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .social {
+        margin: 2rem auto 1rem auto;
+    }
+}
+
+.fab {
+    padding: 0;
+    margin: 0rem 2rem;
+}
+
+.navigation-footer a {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .navigation-footer a {
+        display: inline-block;
+    }
+}
+
+.navigation-footer a {
+    color: silver;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.navigation-footer a:hover {
+    color: white
+}
