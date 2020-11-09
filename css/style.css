@@ -1,230 +1,268 @@
-            /***************Global*************/
-            
-            body {
-                font-family: serif;
-                text-align: center;
-                color: white;
-                font-size: 1.2rem;
-                font-weight: 200;
-            }
-            
-            h1 {
-                font-weight: 900;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-                font-weight: 700;
-            }
-            
-            h3 {
-                font-size: 1.6rm;
-                font-weight: 500;
-            }
-            
-            h4 {
-                font-size: 1.4rem;
-                font-weight: 400;
-            }
-            
-            @media (max-width:768px) {
-                h2 {
-                    font-size: 1.4rem;
-                }
-                h3 {
-                    font-size: 1.2rem;
-                }
-                footer>p {
-                    font-size: .4rem;
-                }
-            }
-            
-            .card {
-                margin: 1rem .5rem;
-            }
-            
-            .short-text>p {
-                font-size: 1rem;
-            }
-            /*****************Header*****************/
-            /********Brand********/
-            
-            .logo-vl {
-                height: 6%;
-                width: 8%;
-            }
-            
-            .name-vl {
-                height: 8%;
-                width: 8%;
-            }
-            
-            @media (max-width:768px) {
-                .logo-vl,
-                .name-vl {
-                    height: 15%;
-                    width: 15%;
-                }
-            }
-            /*****Navigation*****/
-            /******Slieder******/
-            
-            .carousel {
-                padding-top: 3.5rem;
-                z-index: -1;
-            }
-            
-            .carousel-item>img {
-                max-width: 100%;
-                max-height: 92vh;
-                opacity: .9;
-            }
-            
-            @media (max-width:768px) {
-                .carousel {
-                    display: none;
-                }
-            }
-            
-            .carousel-inner {
-                position: absolute;
-            }
-            /********************Main*****************/
-            
-            .slogan p {
-                padding: 0;
-                margin: 0;
-                font-size: 1rem;
-            }
-            
-            section {
-                padding: 2rem 0 4rem 0;
-            }
-            
-            @media (max-width:768px) {
-                section {
-                    padding: 2rem 0 0rem 0;
-                }
-            }
-            
-            section:first-child {
-                padding-top: 10rem;
-                padding-bottom: 1rem;
-            }
-            
-            @media (max-width:768px) {
-                section:first-child {
-                    padding-top: 10rem;
-                    padding-bottom: 3rem;
-                }
-            }
-            
-            @media (max-width:768px) {
-                section:first-child {
-                    background-image: url(../img/port-3956710_640.jpg);
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                    background-size: cover;
-                    max-width: 100%;
-                }
-                section:nth-child(2) {
-                    background-image: url(../img/porto-2048723_640.jpg);
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                    background-size: cover;
-                    max-width: 100%;
-                }
-                section:nth-child(3) {
-                    background-image: url(../img/belem-tower-2809818_640.jpg);
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                    background-size: cover;
-                    max-width: 100%;
-                }
-            }
-            
-            .products {
-                padding-top: 10rem;
-                text-align: center;
-            }
-            
-            @media (max-width:768px) {
-                .products {
-                    display: none;
-                }
-            }
-            
-            section:nth-child(2n) {
-                background-color: rgba(37, 37, 37, 0.76);
-                color: rgb(255, 255, 255);
-            }
-            
-            @media (max-width:768px) {
-                section:nth-child(2n) {
-                    color: white;
-                }
-                .event-cards {
-                    color: black;
-                }
-            }
-            /***Eventos****/
-            
-            .event-cards {
-                opacity: .8;
-            }
-            
-            .event-cards:hover {
-                opacity: 1;
-            }
-            
-            .card-text {
-                color: black;
-            }
-            
-            @media (max-width:768px) {
-                .event-cards {
-                    opacity: .8;
-                }
-            }
-            /*********Gastronomia*******/
-            
-            .gastronomia-card {
-                color: black;
-            }
-            /********************Footer*******************/
-            
-            .nav-footer {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: 90% 10%;
-            }
-            
-            .map {
-                grid-area: 1/1/2/2;
-                border-right: 1px solid black;
-            }
-            
-            .email {
-                grid-area: 1/2/2/3;
-                border-right: 1px solid black;
-            }
-            
-            .social-media {
-                grid-area: 1/3/2/4;
-            }
-            
-            .copyright {
-                grid-area: 2/1/3/4;
-                background-color: rgb(46, 46, 46);
-            }
-            
-            .copyright p {
-                margin-bottom: 0;
-            }
-            
-            @media (max-width:768px) {
-                .text-footer {
-                    padding: 0.4rem;
-                    font-size: .50rem;
-                }
-            }
+/***************Global*************/
+
+body {
+    font-family: serif;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.6rm;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+@media (max-width:768px) {
+    h2 {
+        font-size: 1.4rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    footer>p {
+        font-size: .4rem;
+    }
+}
+
+.card {
+    margin: 1rem .5rem;
+}
+
+.short-text>p {
+    font-size: 1rem;
+}
+
+
+/*****************Header*****************/
+
+
+/********Brand********/
+
+.logo-vl {
+    height: 6%;
+    width: 8%;
+}
+
+.name-vl {
+    height: 8%;
+    width: 8%;
+}
+
+@media (max-width:768px) {
+    .logo-vl,
+    .name-vl {
+        height: 15%;
+        width: 15%;
+    }
+}
+
+
+/*****Navigation*****/
+
+
+/******Slieder******/
+
+.carousel {
+    padding-top: 3.5rem;
+    z-index: -1;
+}
+
+.carousel-item>img {
+    max-width: 100%;
+    max-height: 92vh;
+    opacity: .9;
+}
+
+@media (max-width:768px) {
+    .carousel {
+        display: none;
+    }
+}
+
+.carousel-inner {
+    position: absolute;
+}
+
+
+/********************Main*****************/
+
+.slogan p {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+section {
+    padding: 2rem 0 4rem 0;
+}
+
+@media (max-width:768px) {
+    section {
+        padding: 2rem 0 0rem 0;
+    }
+}
+
+section:first-child {
+    padding-top: 10rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width:768px) {
+    section:first-child {
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width:768px) {
+    section:first-child {
+        background-image: url(../img/port-3956710_640.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        max-width: 100%;
+    }
+    section:nth-child(2) {
+        background-image: url(../img/porto-2048723_640.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        max-width: 100%;
+    }
+    section:nth-child(3) {
+        background-image: url(../img/belem-tower-2809818_640.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        max-width: 100%;
+    }
+}
+
+.products {
+    padding-top: 10rem;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .products {
+        display: none;
+    }
+}
+
+section:nth-child(2n) {
+    background-color: rgba(37, 37, 37, 0.76);
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width:768px) {
+    section:nth-child(2n) {
+        color: white;
+    }
+    .event-cards {
+        color: black;
+    }
+}
+
+
+/*****Instagram***/
+
+.instagram a {
+    text-decoration: none;
+    color: white;
+}
+
+.instagram a:hover {
+    color: brown;
+    zoom: 1.1;
+}
+
+@media (max-width:768px) {
+    .instagram a {
+        color: brown;
+    }
+    .instagram a:hover {
+        zoom: 1;
+    }
+}
+
+
+/*********Gastronomia*******/
+
+.gastronomia-card {
+    color: black;
+}
+
+
+/***Eventos****/
+
+.event-cards {
+    opacity: .8;
+}
+
+.event-cards:hover {
+    opacity: 1;
+}
+
+.card-text {
+    color: black;
+}
+
+@media (max-width:768px) {
+    .event-cards {
+        opacity: .8;
+    }
+}
+
+
+/********************Footer*******************/
+
+.nav-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 90% 10%;
+}
+
+.map {
+    grid-area: 1/1/2/2;
+    border-right: 1px solid black;
+}
+
+.email {
+    grid-area: 1/2/2/3;
+    border-right: 1px solid black;
+}
+
+.social-media {
+    grid-area: 1/3/2/4;
+}
+
+.copyright {
+    grid-area: 2/1/3/4;
+    background-color: rgb(46, 46, 46);
+}
+
+.copyright p {
+    margin-bottom: 0;
+}
+
+@media (max-width:768px) {
+    .text-footer {
+        padding: 0.4rem;
+        font-size: .50rem;
+    }
+}
